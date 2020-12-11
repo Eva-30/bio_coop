@@ -1,5 +1,10 @@
 <?php
     $date = date("m");
+    
+    if(isset($_GET['action'])){
+        $date = $_GET['action'];
+    }
+
     switch($date){
         case "01" : 
             include "janvier.html";
